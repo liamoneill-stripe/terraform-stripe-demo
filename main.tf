@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "stripe" {
-  api_key = ""
+  api_key = TF_VAR_STRIPE_SECRET_KEY
 }
 
 resource "stripe_product" "monthly_guardian_print" {
