@@ -64,7 +64,6 @@ jobs:
         shell: bash
 
     steps:
-    - name: Environment 
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v4
