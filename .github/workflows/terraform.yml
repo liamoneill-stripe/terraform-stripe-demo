@@ -64,6 +64,9 @@ jobs:
         shell: bash
 
     steps:
+    - name: Environment 
+      env: # Or as an environment variable
+        STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v4
